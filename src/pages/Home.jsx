@@ -1,6 +1,6 @@
 import { Navbar } from "../components/Navbar";
 import { ThemeToggle } from "../components/ThemeToggle";
-import { AboutMe } from "../components/AboutMe";
+import { About } from "../components/About";
 import { Projects } from "../components/Projects";
 import { Skills } from "../components/Skills";
 import { Resume } from "../components/Resume";
@@ -15,7 +15,7 @@ export const Home = () => {
         {/* NavBar */} 
         <Navbar/>
         {/* Profile */} 
-        <AboutMe/>
+        <About/>
         {/* Projects */} 
         <Projects/>
         {/* Skills */} 

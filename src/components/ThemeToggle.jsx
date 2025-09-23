@@ -7,9 +7,22 @@ export const ThemeToggle = () => {
 
     useEffect(() => {
         const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        if (savedTheme === 'dark') {
             document.documentElement.classList.add('dark');
             setIsDarkMode(true);
+        } else if (savedTheme === 'light') {
+            document.documentElement.classList.remove('dark');
+            setIsDarkMode(false);
+        } else {
+            // No saved preference — follow system preference
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (prefersDark) {
+                document.documentElement.classList.add('dark');
+                setIsDarkMode(true);
+            } else {
+                document.documentElement.classList.remove('dark');
+                setIsDarkMode(false);
+            }
         }
     }, []);
 
@@ -21,24 +34,27 @@ export const ThemeToggle = () => {
         }
     }, [isDarkMode]);
 
-
     const toggleTheme = () => {
-        if (isDarkMode) {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
-            setIsDarkMode(false);
-        }   else {
-                document.documentElement.classList.add('dark');
-                localStorage.setItem('theme', 'dark');
-                setIsDarkMode(true);
-            }
+        setIsDarkMode(prev => {
+            const next = !prev;
+            localStorage.setItem('theme', next ? 'dark' : 'light');
+            return next;
+        });
     };
 
-    return ( 
-        <button onClick = {toggleTheme} className={cn("fixed top-4 right-4 md:right-40 p-2 rounded-full bg-white-2000 dark:bg-white-800 shadow-lg z-50")}> 
-            {isDarkMode ? 
-            ( <Sun className="h-6 w-6 text-yellow-300"/> ) : 
-            ( <Moon className="h-6 w-6 text-blue-900"/> )} 
+    return (
+        <button
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            className={cn(
+                "fixed top-4 right-4 md:right-40 p-2 rounded-full bg-white-2000 dark:bg-white-800 shadow-lg z-50"
+            )}
+        >
+            {isDarkMode ? (
+                <Sun className="h-6 w-6 text-yellow-300" />
+            ) : (
+                <Moon className="h-6 w-6 text-gray-800" />
+            )}
         </button>
     );
 };

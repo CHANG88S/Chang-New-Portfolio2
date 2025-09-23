@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { Navbar } from './components/Navbar'
 import { useState } from 'react'
@@ -8,11 +8,11 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element = {<Home/>}/>       
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }

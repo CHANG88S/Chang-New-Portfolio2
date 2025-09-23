@@ -1,3 +1,8 @@
+import portfolioImg from "../assets/projects/PortfolioSite.png"
+import groceryImg from "../assets/projects/GroceryStoreDB.png"
+import foodAppImg from "../assets/projects/FoodAppTS2.png"
+import typingImg from "../assets/projects/TypingTest.png"
+
 export const Projects = () => {
     return (    
     
@@ -8,11 +13,11 @@ export const Projects = () => {
             </div>
 
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4"> { /* Project Layouts */ }
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4"> { /* Project Layouts */ }
 
-                <div class= "rounded-md border bg-card text-card-foreground shadow flex flex-col shadow-sm shadow-sm_m card-border bg-card-m">
-                    <div class="flex w-full max-h-[15rem] min-h-[15rem] rounded-md flex-col space-y-1.5 p-4 pb-2 skeleton relative">
-                        <a className="overflow-hidden" href = "https://github.com/CHANG88S/Chang-New-Portfolio"><img class="h-full w-full object-cover rounded-md maskImage duration-300 hover:scale-105" src="src\assets\projects\PortfolioSite.png" alt="Portfolio Project"/></a>
+                <div className= "rounded-md border bg-card text-card-foreground shadow flex flex-col shadow-sm shadow-sm_m card-border bg-card-m">
+                    <div className="flex w-full max-h-[15rem] min-h-[15rem] rounded-md flex-col space-y-1.5 p-4 pb-2 skeleton relative">
+                        <a className="overflow-hidden" href = "https://github.com/CHANG88S/Chang-New-Portfolio"><img className="h-full w-full object-cover rounded-md maskImage duration-300 hover:scale-105" src={portfolioImg} alt="Portfolio Project"/></a>
                     </div>
                     <div class="px-4 py-2 pt-0 flex flex-col gap-1">
                         <div class="font-sans font-bold text-left text-neutral-600 dark:text-neutral-200  mt-0">Portfolio</div>
@@ -36,9 +41,9 @@ export const Projects = () => {
                 </div>
 
 
-                <div class= "rounded-md border bg-card text-card-foreground shadow flex flex-col shadow-sm shadow-sm_m card-border bg-card-m">
-                    <div class="flex w-full max-h-[15rem] min-h-[15rem] rounded-md flex-col space-y-1.5 p-4 pb-2 skeleton relative">
-                        <a className="overflow-hidden" href = "https://github.com/CHANG88S/DBProject"><img class="h-full w-full object-cover rounded-md maskImage duration-300 hover:scale-105" src="src\assets\projects\GroceryStoreDB.png" alt="Database Project"/></a>
+                <div className= "rounded-md border bg-card text-card-foreground shadow flex flex-col shadow-sm shadow-sm_m card-border bg-card-m">
+                    <div className="flex w-full max-h-[15rem] min-h-[15rem] rounded-md flex-col space-y-1.5 p-4 pb-2 skeleton relative">
+                        <a className="overflow-hidden" href = "https://github.com/CHANG88S/DBProject"><img className="h-full w-full object-cover rounded-md maskImage duration-300 hover:scale-105" src={groceryImg} alt="Database Project"/></a>
                     </div>
                     <div class="px-4 py-2 pt-0 flex flex-col gap-1">
                         <div class="font-sans font-bold text-left text-neutral-600 dark:text-neutral-200  mt-0">Grocery Store Database</div>
@@ -62,9 +67,9 @@ export const Projects = () => {
 
 
 
-                <div class= "rounded-md border bg-card text-card-foreground shadow flex flex-col shadow-sm shadow-sm_m card-border bg-card-m">
-                    <div class="flex w-full max-h-[15rem] min-h-[15rem] rounded-md flex-col space-y-1.5 p-4 pb-2 skeleton relative">
-                        <a className="overflow-hidden" href = "https://github.com/CHANG88S/FoodAppTS"><img class="h-full w-full object-cover rounded-md maskImage duration-300 hover:scale-105" src="src\assets\projects\FoodAppTS2.png" alt="Project 1 Image"/></a>
+                <div className= "rounded-md border bg-card text-card-foreground shadow flex flex-col shadow-sm shadow-sm_m card-border bg-card-m">
+                    <div className="flex w-full max-h-[15rem] min-h-[15rem] rounded-md flex-col space-y-1.5 p-4 pb-2 skeleton relative">
+                        <a className="overflow-hidden" href = "https://github.com/CHANG88S/FoodAppTS"><img className="h-full w-full object-cover rounded-md maskImage duration-300 hover:scale-105" src={foodAppImg} alt="Project 1 Image"/></a>
                     </div>
                     <div class="px-4 py-2 pt-0 flex flex-col gap-1">
                         <div class="font-sans font-bold text-left text-neutral-600 dark:text-neutral-200  mt-0">In Progress Food App</div>
@@ -88,9 +93,9 @@ export const Projects = () => {
 
 
 
-                <div class= "rounded-md border bg-card text-card-foreground shadow flex flex-col shadow-sm shadow-sm_m card-border bg-card-m">
-                    <div class="flex w-full max-h-[15rem] min-h-[15rem] rounded-md flex-col space-y-1.5 p-4 pb-2 skeleton relative">
-                        <a className="overflow-hidden" href = "https://github.com/CHANG88S/TypingTest"><img class="h-full w-full object-cover rounded-md maskImage duration-300 hover:scale-105" src="src\assets\projects\TypingTest.png" alt="Project 1 Image"/></a>
+                <div className= "rounded-md border bg-card text-card-foreground shadow flex flex-col shadow-sm shadow-sm_m card-border bg-card-m">
+                    <div className="flex w-full max-h-[15rem] min-h-[15rem] rounded-md flex-col space-y-1.5 p-4 pb-2 skeleton relative">
+                        <a className="overflow-hidden" href = "https://github.com/CHANG88S/TypingTest"><img className="h-full w-full object-cover rounded-md maskImage duration-300 hover:scale-105" src={typingImg} alt="Project 1 Image"/></a>
                     </div>
                     <div class="px-4 py-2 pt-0 flex flex-col gap-1">
                         <div class="font-sans font-bold text-left text-neutral-600 dark:text-neutral-200  mt-0">Typing Test</div>

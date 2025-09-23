@@ -1,4 +1,6 @@
-export const AboutMe = () => {
+import profilePic from "../assets/profile3.jpg"
+
+export const About = () => {
     return (
         
     <div id="about" className="max-w-3xl mx-auto z-40 pt-16 justify-center">
@@ -6,7 +8,7 @@ export const AboutMe = () => {
             <div className="flex items-center">
             {/* Profile Pic */}
             <span className ="flex relative rounded-full h-16 w-16 border border-foreground-800 overflow-hidden">
-                <img class="aspect-square h-full w-full" aria-label="Profile Picture" src="src\assets\profile3.jpg"/>
+                <img class="aspect-square h-full w-full" aria-label="Profile Picture" src={profilePic} />
             </span>
                 <div className="flex flex-col pl-3">
                     <h1 className="flex justify-between text-m font-bold">Simon Chang</h1>
