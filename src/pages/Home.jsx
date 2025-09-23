@@ -14,7 +14,6 @@ export const Home = () => {
         <ThemeToggle/>
         {/* NavBar */} 
         <Navbar/>
-        
         {/* Profile */} 
         <AboutMe/>
         {/* Projects */} 
