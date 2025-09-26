@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <div className="max-w-3xl mx-auto flex justify-between items-center py-8">
+        <div className="block max-w-3xl mx-auto flex justify-between items-center py-8">
             <div className="flex items-center">
                 {/* Contact Info */}
                 <h3 className="text-2xl font-bold pr-2 pb-1 text-white">Contact Me:</h3>

@@ -3,7 +3,8 @@ import profilePic from "../assets/profile3.jpg"
 export const About = () => {
     return (
         
-    <div id="about" className="max-w-3xl mx-auto z-40 pt-16 justify-center">
+        
+    <div id="about" className="block max-w-3xl mx-auto z-40 pt-16 justify-center">
         <div className="flex items-center justify-between">
             <div className="flex items-center">
             {/* Profile Pic */}
@@ -36,6 +37,5 @@ export const About = () => {
                 A developer with an interest in UI/UX and Data Science. Open to other roles in tech. Wanting to learn and gain more experience. Thank you for your time on reviewing my profile!
             </p>
     </div>
-
     );
 };
