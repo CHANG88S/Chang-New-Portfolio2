@@ -2,14 +2,37 @@ import profilePic from "../assets/profile3.jpg"
 
 export const About = () => {
     return (
+        <>
+        <style>
+        @keyframes appear {
+                from {
+                    opacity: 0;
+                    scale: 0.5;
+                }
+                to {
+                    opacity: 1;
+                    scale: 1;
+            }
+        }
+            
+
+            .block {
+                animation: appear linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%; 
+            }
+
+          
         
+        </style>
+
         
     <div id="about" className="block max-w-3xl mx-auto z-40 pt-16 justify-center">
         <div className="flex items-center justify-between">
             <div className="flex items-center">
             {/* Profile Pic */}
             <span className ="flex relative rounded-full h-16 w-16 border border-foreground-800 overflow-hidden">
-                <img class="aspect-square h-full w-full" aria-label="Profile Picture" src={profilePic} />
+                <img className="aspect-square h-full w-full" aria-label="Profile Picture" src={profilePic} />
             </span>
                 <div className="flex flex-col pl-3">
                     <h1 className="flex justify-between text-m font-bold">Simon Chang</h1>
@@ -37,5 +60,6 @@ export const About = () => {
                 A developer with an interest in UI/UX and Data Science. Open to other roles in tech. Wanting to learn and gain more experience. Thank you for your time on reviewing my profile!
             </p>
     </div>
+    </>
     );
 };
