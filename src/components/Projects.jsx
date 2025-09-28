@@ -6,14 +6,14 @@ import typingImg from "../assets/projects/TypingTest.png"
 export const Projects = () => {
     return (    
     
-    <div className="max-w-3xl mx-auto z-35 justify-center">
+    <div className="w-full md:max-w-3xl max-w-sm mx-auto z-35 justify-center">
         <div className="w-full mt-8 flex flex-col">
             <div className="flex items-center">
                 <h1 id="projects" className="text-3xl font-bold">Projects</h1>
             </div>
 
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4"> { /* Project Layouts */ }
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4"> { /* Project Layouts */ }
 
                 <div className= "rounded-md border bg-card text-card-foreground shadow flex flex-col shadow-sm shadow-sm_m card-border bg-card-m">
                     <div className="flex w-full max-h-[15rem] min-h-[15rem] rounded-md flex-col space-y-1.5 p-4 pb-2 skeleton relative">
