@@ -6,8 +6,8 @@ export const Resume = () => {
         </div>
         
         <iframe 
-            src={`${import.meta.env.BASE_URL}resume.pdf#toolbar=0&navpanes=0&zoom=75`}
-            className="w-full h-[800px] md:h-[1000px] rounded-md" 
+            src={`${import.meta.env.BASE_URL}resume.pdf#toolbar=0&navpanes=0`}
+            className="w-full h-[400px] md:h-[1000px] rounded-md" 
             type="application/pdf" 
             style={{ border: 'none' }}
       />
