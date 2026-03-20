@@ -40,6 +40,28 @@ export const Skills = () => {
                 </div>
 
 
+
+                <div className="pt-4 pb-8 rounded-s text-center">
+                    <div class="flex w-16 h-full rounded-md flex-col space-y-1.5 skeleton relative border overflow-hidden">
+                        <img class="h-full w-full mx-auto" src={tableauLogo} alt="Tableau"/>
+                        <div class="text-xs text-center">
+                            Tableau
+                        </div>
+                    </div>
+                </div>    
+
+
+
+               <div className="pt-4 pb-8 rounded-s text-center">
+                    <div class="flex w-16 h-full rounded-md flex-col space-y-1.5 skeleton relative border overflow-hidden">
+                        <img class="h-full w-full mx-auto" src={mysqlLogo} alt="MySQL"/>
+                        <div class="text-xs text-center">
+                            MySQL
+                        </div>
+                    </div>
+                </div>
+
+
                 <div className="pt-4 pb-8 rounded-s text-center">
                     <div class="flex w-16 h-full rounded-md flex-col space-y-1.5 skeleton relative border overflow-hidden">
                         <img class="h-full w-full mx-auto" src={typescriptLogo} alt="Typescript"/>
@@ -88,24 +110,10 @@ export const Skills = () => {
                     </div>
                 </div>
 
-                <div className="pt-4 pb-8 rounded-s text-center">
-                    <div class="flex w-16 h-full rounded-md flex-col space-y-1.5 skeleton relative border overflow-hidden">
-                        <img class="h-full w-full mx-auto" src={mysqlLogo} alt="MySQL"/>
-                        <div class="text-xs text-center">
-                            MySQL
-                        </div>
-                    </div>
-                </div>
+                
 
 
-                <div className="pt-4 pb-8 rounded-s text-center">
-                    <div class="flex w-16 h-full rounded-md flex-col space-y-1.5 skeleton relative border overflow-hidden">
-                        <img class="h-full w-full mx-auto" src={tableauLogo} alt="tableau"/>
-                        <div class="text-xs text-center">
-                            Tableau
-                        </div>
-                    </div>
-                </div>    
+                
 
 
                 
