@@ -1,128 +1,104 @@
-import portfolioImg from "../assets/projects/PortfolioSite.png"
-import groceryImg from "../assets/projects/GroceryStoreDB.png"
-import foodAppImg from "../assets/projects/FoodAppTS2.png"
-import typingImg from "../assets/projects/TypingTest.png"
+import portfolioImg from "../assets/projects/PortfolioSite.png";
+import groceryImg from "../assets/projects/GroceryStoreDB.png";
+import foodAppImg from "../assets/projects/foodraterts.png";
+import typingImg from "../assets/projects/TypingTest.png";
+
+const projectData = [
+  {
+    title: "Food Rating App (In Progress)",
+    description: "This is an in progress food app that I am currently build from scratch to learn the full stack development cycle. Similar to yelp/beli functionality",
+    image: foodAppImg,
+    tags: ["Javascript", "React Native", "Typescript", "Convex"],
+    github: "https://github.com/CHANG88S/FoodAppTS",
+  },
+  {
+    title: "Portfolio",
+    description: "Current portfolio that you are looking at, learned how to use a bit of Tailwind to design it",
+    image: portfolioImg,
+    tags: ["HTML", "Javascript", "React", "TailwindCSS", "Vite"],
+    github: "https://github.com/CHANG88S/Chang-New-Portfolio",
+  },
+  {
+    title: "Grocery Store Database",
+    description: "Learned how to use MySQL to make entities, business logic, and queries from scratch",
+    image: groceryImg,
+    tags: ["HTML", "MySQL", "PHP"],
+    github: "https://github.com/CHANG88S/DBProject",
+  },
+  {
+    title: "Typing Test",
+    description: "This is a simple typing test that I made to learn how to use HTML and CSS. It has a timer, WPM, and accuracy calculation.",
+    image: typingImg,
+    tags: ["CSS", "HTML", "Javascript"],
+    github: "https://github.com/CHANG88S/TypingTest",
+  },
+];
 
 export const Projects = () => {
-    return (    
-    
+  return (
     <div className="w-full md:max-w-3xl max-w-sm mx-auto z-35 justify-center">
-        <div className="w-full mt-8 flex flex-col">
-            <div className="flex items-center">
-                <h1 id="projects" className="text-3xl font-bold">Projects</h1>
-            </div>
-
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4"> { /* Project Layouts */ }
-
-                <div className= "rounded-md border bg-card text-card-foreground shadow flex flex-col shadow-sm shadow-sm_m card-border bg-card-m">
-                    <div className="flex w-full max-h-[15rem] min-h-[15rem] rounded-md flex-col space-y-1.5 p-4 pb-2 skeleton relative">
-                        <a className="overflow-hidden" href = "https://github.com/CHANG88S/Chang-New-Portfolio"><img className="h-full w-full object-cover rounded-md maskImage duration-300 hover:scale-105" src={portfolioImg} alt="Portfolio Project"/></a>
-                    </div>
-                    <div class="px-4 py-2 pt-0 flex flex-col gap-1">
-                        <div class="font-sans font-bold text-left text-neutral-600 dark:text-neutral-200  mt-0">Portfolio</div>
-                        <div class="prose max-w-full text-pretty font-sans text-xs text-gray-400 text-left dark:prose-invert">
-                            <p>Current portfolio that you are looking at, learned how to use a bit of Tailwind to design it</p>
-                        </div>
-                            <div class="mt-1 flex flex-wrap gap-1.5 mb-2">
-                                <span class="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">HTML</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">Javascript</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">React</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">TailwindCSS</span>
-                            </div>
-                            <div class= "flex flex-row flex-wrap items-start gap-1.5 mb-2">
-                                <a target="_blank" href="https://github.com/CHANG88S/Chang-New-Portfolio">
-                                <div class="items-center rounded-sm border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-800 text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px] border_m border-gray-800">
-                                    GitHub
-                                </div>
-                                </a>
-                            </div>
-                    </div>
-                </div>
-
-
-                <div className= "rounded-md border bg-card text-card-foreground shadow flex flex-col shadow-sm shadow-sm_m card-border bg-card-m">
-                    <div className="flex w-full max-h-[15rem] min-h-[15rem] rounded-md flex-col space-y-1.5 p-4 pb-2 skeleton relative">
-                        <a className="overflow-hidden" href = "https://github.com/CHANG88S/DBProject"><img className="h-full w-full object-cover rounded-md maskImage duration-300 hover:scale-105" src={groceryImg} alt="Database Project"/></a>
-                    </div>
-                    <div class="px-4 py-2 pt-0 flex flex-col gap-1">
-                        <div class="font-sans font-bold text-left text-neutral-600 dark:text-neutral-200  mt-0">Grocery Store Database</div>
-                        <div class="prose max-w-full text-pretty font-sans text-xs text-gray-400 text-left dark:prose-invert">
-                            <p>Learned how to use MySQL to make entities, business logic, and queries from scratch</p>
-                        </div>
-                            <div class="mt-1 flex flex-wrap gap-1.5 mb-2">
-                                <span class="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">HTML</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">MySQL</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">PHP</span>
-                            </div>
-                            <div class= "flex flex-row flex-wrap items-start gap-1.5 mb-2">
-                                <a target="_blank" href="https://github.com/CHANG88S/DBProject">
-                                <div class="items-center rounded-sm border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-800 text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px] border_m border-gray-800">
-                                    GitHub
-                                </div>
-                                </a>
-                            </div>
-                    </div>
-                </div>
-
-
-
-                <div className= "rounded-md border bg-card text-card-foreground shadow flex flex-col shadow-sm shadow-sm_m card-border bg-card-m">
-                    <div className="flex w-full max-h-[15rem] min-h-[15rem] rounded-md flex-col space-y-1.5 p-4 pb-2 skeleton relative">
-                        <a className="overflow-hidden" href = "https://github.com/CHANG88S/FoodAppTS"><img className="h-full w-full object-cover rounded-md maskImage duration-300 hover:scale-105" src={foodAppImg} alt="Project 1 Image"/></a>
-                    </div>
-                    <div class="px-4 py-2 pt-0 flex flex-col gap-1">
-                        <div class="font-sans font-bold text-left text-neutral-600 dark:text-neutral-200  mt-0">In Progress Food App</div>
-                        <div class="prose max-w-full text-pretty font-sans text-xs text-gray-400 text-left dark:prose-invert">
-                            <p>This was an in progress react native app from scratch where I was trying to build a food rating app, something similar to yelp!</p>
-                        </div>
-                            <div class="mt-1 flex flex-wrap gap-1.5 mb-2">
-                                <span class="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">Javascript</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">React Native</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">Typescript</span>
-                            </div>
-                            <div class= "flex flex-row flex-wrap items-start gap-1.5 mb-2">
-                                <a target="_blank" href="https://github.com/CHANG88S/FoodAppTS">
-                                <div class="items-center rounded-sm border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-800 text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px] border_m border-gray-800">
-                                    GitHub
-                                </div>
-                                </a>
-                            </div>
-                    </div>
-                </div>
-
-
-
-                <div className= "rounded-md border bg-card text-card-foreground shadow flex flex-col shadow-sm shadow-sm_m card-border bg-card-m">
-                    <div className="flex w-full max-h-[15rem] min-h-[15rem] rounded-md flex-col space-y-1.5 p-4 pb-2 skeleton relative">
-                        <a className="overflow-hidden" href = "https://github.com/CHANG88S/TypingTest"><img className="h-full w-full object-cover rounded-md maskImage duration-300 hover:scale-105" src={typingImg} alt="Project 1 Image"/></a>
-                    </div>
-                    <div class="px-4 py-2 pt-0 flex flex-col gap-1">
-                        <div class="font-sans font-bold text-left text-neutral-600 dark:text-neutral-200  mt-0">Typing Test</div>
-                        <div class="prose max-w-full text-pretty font-sans text-xs text-gray-400 text-left dark:prose-invert">
-                            <p>This was a simple typing test that I made, there was something I couldn't figure out where you would have to press a space after the last word completed to submit your test. </p>
-                        </div>
-                            <div class="mt-1 flex flex-wrap gap-1.5 mb-2">
-                                <span class="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">CSS</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">HTML</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">Javascript</span>
-                            </div>
-                            <div class= "flex flex-row flex-wrap items-start gap-1.5 mb-2">
-                                <a target="_blank" href="https://github.com/CHANG88S/TypingTest">
-                                <div class="items-center rounded-sm border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-800 text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px] border_m border-gray-800">
-                                    GitHub
-                                </div>
-                                </a>
-                            </div>
-                    </div>
-                </div>
-
-
-
-            </div>                                          { /* Project Layouts */ }
-
+      <div className="w-full mt-8 flex flex-col gap-6">
+        <div className="flex items-center">
+          <h1 id="projects" className="text-3xl font-bold">Projects</h1>
         </div>
+
+        {/* 2x2 Grid for ALL Projects */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {projectData.map((project, idx) => (
+            <div key={idx} className="rounded-md border bg-card text-card-foreground shadow-sm flex flex-col card-border bg-card-m overflow-hidden">
+              <div className="flex w-full h-48 p-4 pb-2 relative bg-neutral-900/50 justify-center items-center">
+                <a 
+                  className="overflow-hidden w-full h-full rounded-md flex justify-center items-center" 
+                  href={project.github} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <img 
+                    className="h-full w-full object-cover rounded-md duration-300 hover:scale-105" 
+                    src={project.image} 
+                    alt={project.title}
+                  />
+                </a>
+              </div>
+
+              <div className="px-4 py-2 pt-0 flex flex-col gap-2 flex-grow justify-between">
+                <div>
+                  <h3 className="font-sans font-bold text-left text-neutral-600 dark:text-neutral-200 mt-2">
+                    {project.title}
+                  </h3>
+                  <p className="prose max-w-full text-pretty font-sans text-xs text-gray-400 text-left dark:prose-invert mt-1">
+                    {project.description}
+                  </p>
+                </div>
+
+                <div>
+                  <div className="mt-2 flex flex-wrap gap-1.5 mb-3">
+                    {project.tags.map((tag, tIdx) => (
+                      <span 
+                        key={tIdx} 
+                        className="text-xs font-medium bg-gray-200 text-gray-800 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex flex-row flex-wrap items-start gap-1.5 mb-2">
+                    <a 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      href={project.github}
+                      className="inline-flex items-center rounded-sm font-semibold transition-colors focus:outline-none bg-gray-800 text-white shadow hover:bg-gray-700 px-2.5 py-1 text-[10px]"
+                    >
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-    
-    );
+  );
 };

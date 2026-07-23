@@ -16,7 +16,7 @@ export const About = () => {
                         <p className="text-m text-left text-gray-400">Riverside, California</p>
                     </div>
                     <div className="justify-between gap-3 flex">
-                        <p className="text-m text-left text-gray-400">B.S in Computer Science | Developer</p>
+                        <p className="text-m text-left text-gray-400">Bachelor of Science in Computer Science CSUN 2025 | Developer</p>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@ export const About = () => {
         </div>
         <br></br>
             <p className="text-m text-left text-gray-400 dark:prose-invert">
-                A developer with an interest in UI/UX and Data Science. Open to other roles in tech. Wanting to learn and gain more experience. Thank you for your time on reviewing my profile!
+                Software Engineer focused on building full-stack web and mobile applications with React Native and modern web technologies. Passionate about data, continuous learning, and crafting seamless user experiences. Open to Software Engineering, Mobile, and Data roles.
             </p>
     </div>
 
